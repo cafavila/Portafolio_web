@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semillas Naturales - Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Ms+Madi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo-tienda">Tienda de <span>Plantas</span></h1>
+    </header>
+    <div class="container">
+        <nav class="menu-principal">
+            <a class="menu" href="index.html">Inicio</a>
+            <a class="menu" href="aboutus.html">Nosotros</a>
+            <a class="menu" href="store.html">Tienda</a>
+            <a class="menu" href="blog.html">Blog</a>
+            <a class="menu" href="galery.html">Galeria</a>
+            <a class="menu" href="contact.html">Contacto</a>    
+        </nav>    
+    </div>
+    <main>
+        <section class="container">
+            <h2>Contacto</h2>
+            <form action="" class="formulario">
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <div class="campo">
+                        <label for="nombre">Nombre :</label>
+                        <input id="nombre" type="text" placeholder="Nombre de Usuario" required>    
+                    </div>
+                    <div class="campo">
+                        <label for="asunto">Asunto :</label>
+                        <input type="text" id="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Correo electronico :</label>
+                        <input type="email" id="email" placeholder="Tienes un email?" required>        
+                    </div>
+                    <div class="campo">
+                        <label for="fono">Telefono :</label>
+                        <input type="tel" id="fono" placeholder="Numero de telefono">        
+                    </div>
+                    <div class="campo">
+                        <label for="movil">Celular :</label>
+                        <input type="tel" id="movil" placeholder="Numero de telefono movil">        
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensaje</legend>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje :</label>
+                        <textarea id="mensaje" rows="10" cols="50"></textarea>        
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Area de contacto</legend>
+                    <div class="campo">
+                        <label for="postventa">Post Venta</label>
+                        <input id="postventa" type="radio" name="tipo">        
+                    </div>
+                    <div class="campo">
+                        <label for="venta">Ventas</label>
+                        <input id="venta" type="radio" name="tipo">        
+                    </div>
+                    <div class="campo">
+                        <label for="soporte">Soporte</label>
+                        <input id="soporte" type="radio" name="tipo">        
+                    </div>
+                    <div class="campo">
+                        <label for="jardineria">Jardineria</label>
+                        <input id="jardineria" type="radio" name="tipo">        
+                    </div>
+                    <div class="campo">
+                        <label for="servicio">Servicio al cliente</label>
+                        <input id="servicio" type="radio" name="tipo">        
+                    </div>
+                </fieldset>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="secciones container">
+            <div>
+                <h3>Productos</h3>
+                <nav>
+                    <a href="#">Arboles</a>
+                    <a href="#">Esquejes</a>
+                    <a href="#">Plantas</a>
+                    <a href="#">Semillas</a>
+                    <a href="#">Abono</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Categorias</h3>
+                <nav>
+                    <a href="#">Frutales</a>
+                    <a href="#">Hornamentales</a>
+                    <a href="#">Nativos</a>
+                    <a href="#">Productivos</a>
+                    <a href="#">Cactus</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="#">Terminos legales</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Ayudas</a>
+                </nav>
+            </div>    
+        </div>
+        <div class="info-empresa">
+            <p>Todos los derechos reservados &copy</p>
+            <p>Santiago, Chile 2022</p>    
+        </div>
+    </footer>
+</body>
+</html>
