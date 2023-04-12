@@ -2,3 +2,6 @@
 
 *.mp4
 logs/
+
+/img/*
+*.png
