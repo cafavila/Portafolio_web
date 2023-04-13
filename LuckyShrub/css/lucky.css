@@ -16,7 +16,7 @@
 }
 
 #imago {
-    width: 90px;
+    width: 80px;
     height: 120px;
     padding: 10px 10px 10px 20px;
 }
@@ -24,8 +24,9 @@
 /* Globales */
 body {
     background-color: var(--segColor);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Nunito', 'Franklin Gothic Medium', sans-serif;
     margin: 3rem 5% 3rem 5%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -82,8 +83,13 @@ nav li {
 }
 
 /* Main */
-.container {
+/* Main - Nosotros */
+.nosotros {
     display: flex;
+}
+
+.nosotros-descripcion {
+    padding: 5px;
 }
 
 h2.title ~ p {
@@ -103,13 +109,108 @@ div video {
     color: var(--luckyRed);
 }
 
+.back {
+    color: var(--priColor);
+    text-align: right;
+    margin-right: 10px;
+}
+
 @media (max-width: 750px){
-    .container {
+    .nosotros {
         flex-direction: column-reverse;
     }
     .title {
         text-align: center;
     }
+}
+
+/* Main - Servicios */
+.servicios {
+    background-color: var(--cuaColor);
+    height: 380px;
+    margin-top: 50px;
+    margin-left: -6%;
+    margin-right: -6%;
+    display: flex;
+}
+
+.service-desc {
+    width: 50%;
+    height: 100%;
+}
+
+.servicios::before,
+.servicios::after {
+    background-color: var(--terColor);
+    content: '';
+    height: 5rem;
+    width: 110%;
+    position: absolute;
+}
+.servicios::before {
+    top: -3rem;
+    left: 0;
+    transform: rotate(2deg);
+}
+
+@media (min-width: 750px) {
+    .servicios::after {
+        bottom: -9rem;
+        left: -5;
+        transform: rotate(2deg);
+    }        
+}
+
+.service-anime {
+    background-color: var(--terColor);
+}
+
+.animation {
+    margin: 10px auto;
+    padding: 10px;
+    height: 80%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.anilogo {
+    position: relative;
+    width: 70px;
+    height: 100px;
+}
+
+#anired {
+    animation: logorado 3s ease alternate-reverse infinite;
+}
+
+#anigreen {
+    animation: logorado 3s ease alternate-reverse 3s infinite;
+}
+
+#aniwhite {
+    animation: logorado 3s ease alternate-reverse 6s infinite;
+}
+
+/* Main - Servicios */
+.store {
+    background-color: var(--quiColor);
+    height: 380px;
+    margin-top: 50px;
+    margin-left: -6%;
+    margin-right: -6%;
+    display: flex;
+}
+
+
+/* Main - Contact */
+.contact {
+    background-color: var(--luckyWhite);
+    height: 380px;
+    margin-top: 50px;
+    margin-left: -6%;
+    margin-right: -6%;
 }
 
 /* Footer */
@@ -123,6 +224,26 @@ footer {
 footer nav {
     flex: 1;
 }
+
+.foot-info {
+    display: grid;
+    padding: auto;
+    width: 100%;
+}
+
+.social {
+    padding-left: 200px;
+}
+
+.social-group {
+    display: flex;
+}
+.socialicons {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+
 
 .copyright {
     margin: auto; 
