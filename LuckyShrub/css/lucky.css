@@ -296,6 +296,16 @@ button:hover {
     background-color: var(--terColor);    
 }
 
+@media (max-width: 750px){
+    .contact-card {
+        width: 100%;
+        height: 80%;
+    }
+    .formulario {
+        grid-template-columns: repeat(2 ifr);
+    }
+}
+
 /*==================================*/
 /* Footer */
 /*==================================*/
@@ -312,13 +322,18 @@ footer nav {
 }
 
 .foot-info {
-    display: grid;
-    padding: auto;
     width: 100%;
+    margin: 3rem auto;
 }
 
+.ubicacion {
+    text-align: center;
+    padding: 10px auto;
+}
 .social {
-    padding-left: 200px;
+    text-align: end;
+    padding-top: 4rem;
+    padding-right: 5rem;
 }
 
 .social-group {
@@ -331,5 +346,24 @@ footer nav {
 }
 
 .copyright {
+    text-align: center;
     margin: auto; 
+}
+
+@media (max-width: 750px){
+    footer {
+        flex-direction: column;
+    }
+    .logo-foot {
+        margin: .5rem auto;
+    }
+    .foot-info {
+        margin: 1rem auto;
+    }
+    .social {
+        padding: 1rem 1rem 1rem 0;
+    }    
+    .social-group {
+        justify-content: end;
+    }
 }
