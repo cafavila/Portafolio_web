@@ -42,17 +42,25 @@ h2 {
     text-align: center;
 }
 
-button {
-    width: 75px;
-    height: 30px;
-    align-self: flex-end;
-}
-
-button:hover {
+.btn {
+    font-weight: 600;
+    background-color:  var(--terColor);
     color: var(--quiColor);
-    background-color: var(--terColor);    
+    display: block;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.3s ease-in;
+    border: none;
 }
 
+.btn:hover {
+    background-color: var(--cuaColor);
+    color: var(--terColor);
+    border-radius: 5px;
+    cursor: pointer;
+}
 /*==================================*/
 /* Header */
 /*==================================*/
