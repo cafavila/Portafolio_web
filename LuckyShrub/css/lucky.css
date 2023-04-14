@@ -233,6 +233,10 @@ article {
     height: 13rem;
     width: 100%;
 }
+
+article p > strong {
+    color: var(--luckyRed);
+}
 /*==================================*/
 /* Footer */
 /*==================================*/
