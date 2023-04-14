@@ -154,7 +154,6 @@ article {
 .second-section {
     display: flex;
     gap: 10px;
-    flex-flow: row wrap;
 }
 
 .info-card {
@@ -168,7 +167,14 @@ article {
 .info-card > p {
     padding: 1rem;
 }
-@media (max-width: 750px){
+
+@media (max-width: 950px){
+    .second-section {
+        flex-flow: row wrap;
+    }
+}
+
+@media (max-width: 640px){
     .second-section {
         flex-direction: column;
     }
